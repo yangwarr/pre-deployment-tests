@@ -94,7 +94,7 @@ drop table variables;
 After doing that the execution of the script is simple. Just type for example:
 
 ```python
-python [payLinkClient.py](http://paylinkclient.py/)
+python payLinkClient.py
 ```
 
 This will open a new private google chrome tab and the script will start.
@@ -103,8 +103,5 @@ For now, the tests require manual input on the following scenarios:
 - payLink that is sent to the test email
 - OTP code that is sent to the test cellPhone
 - payment of the QR code - waiting for it to be automatically paid also works, or use stark bank to complete it faster
-
-For paylink and OTP codes, the test will ask you in the console to input the link or otp code, simply paste it there and press enter and let the process continue. Example of paylink and otp input:
-
 
 Every time you execute a test, a log file will be created with the information regarding the test. If the test for some reason fails it is smart enough to re-try the test, however it will always start from the beginning.
